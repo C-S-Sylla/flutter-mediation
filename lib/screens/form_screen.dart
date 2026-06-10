@@ -23,7 +23,7 @@ class _FormScreenState extends State<FormScreen> {
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
-            TextFormField(controller: _obj, decoration: const InputDecoration(labelText: "Objet"), validator: (v) => v!.isEmpty ? "Champ requis" : null),
+            TextFormField(controller: _obj, decoration: const InputDecoration(labelText: "Objet"), validator: (v) => v!.isEmpty ? "Champ requis : objet" : null),
             TextFormField(controller: _part, decoration: const InputDecoration(labelText: "Parties"), validator: (v) => v!.isEmpty ? "Champ requis" : null),
             TextFormField(controller: _med, decoration: const InputDecoration(labelText: "Médiateur"), validator: (v) => v!.isEmpty ? "Champ requis" : null),
             CheckboxListTile(title: const Text("Résolu"), value: _res, onChanged: (v) => setState(() => _res = v!)),

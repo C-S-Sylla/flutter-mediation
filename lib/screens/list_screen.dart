@@ -51,7 +51,7 @@ final String userName = (ModalRoute.of(context)?.settings.arguments as String?) 
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        title: const Text("ODD 16 - Registre"),
+        title: const Text(" Registre"),
         actions: [
           IconButton(
             onPressed: () => Navigator.pushNamed(context, '/about', arguments: userName),
@@ -61,7 +61,7 @@ final String userName = (ModalRoute.of(context)?.settings.arguments as String?) 
       ),
       body: Column(
         children: [
-          // --- DASHBOARD VISUEL ---
+          // DASHBOARD VISUEL
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(20),
@@ -79,7 +79,7 @@ final String userName = (ModalRoute.of(context)?.settings.arguments as String?) 
                   ],
                 ),
                 const SizedBox(height: 20),
-                const Text("Progression ODD 16", style: TextStyle(color: Colors.white70)),
+                const Text("Progression ", style: TextStyle(color: Colors.white70)),
                 const SizedBox(height: 8),
                 LinearProgressIndicator(
                   value: taux / 100,
@@ -94,7 +94,7 @@ final String userName = (ModalRoute.of(context)?.settings.arguments as String?) 
             ),
           ),
 
-          // --- BARRE DE RECHERCHE ---
+          // BARRE DE RECHERCHE
           Padding(
             padding: const EdgeInsets.all(15),
             child: TextField(
@@ -109,7 +109,7 @@ final String userName = (ModalRoute.of(context)?.settings.arguments as String?) 
             ),
           ),
 
-          // --- FILTRE RAPIDE ---
+          // FILTRE RAPIDE
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Row(
@@ -123,7 +123,7 @@ final String userName = (ModalRoute.of(context)?.settings.arguments as String?) 
             ),
           ),
 
-          // --- LISTE OU MESSAGE VIDE ---
+          // LISTE OU MESSAGE VIDE
           Expanded(
             child: filtered.isEmpty 
               ? _buildEmptyState()
