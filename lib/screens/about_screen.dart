@@ -31,7 +31,7 @@ final String userName = (ModalRoute.of(context)?.settings.arguments as String?) 
 
             // Tes infos d'étudiant (statiques)
             _buildInfoCard("Développeur", "Cheikh Sadibou Sylla", Icons.badge),
-            _buildInfoCard("Source", "Quartier Fass-Delorme", Icons.source),
+            _buildInfoCard("Source", "Quartier Amitié 3", Icons.source),
 
             const SizedBox(height: 50),
 
@@ -40,7 +40,6 @@ final String userName = (ModalRoute.of(context)?.settings.arguments as String?) 
               width: double.infinity,
               child: OutlinedButton.icon(
                 onPressed: () {
-                  // Nettoie tout et retourne au Login
                   Navigator.pushNamedAndRemoveUntil(
                     context, 
                     '/login', 
