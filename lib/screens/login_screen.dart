@@ -35,7 +35,7 @@ void _connexion() {
             const Text(
               "Bienvenue",
               style: TextStyle(
-                color: Color(0xFFD4AF37), // Jaune/Doré de l'image
+                color: Color(0xFF00695C), // Jaune/Doré de l'image
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
               ),
@@ -53,7 +53,7 @@ void _connexion() {
                   borderSide: BorderSide(color: Colors.white38),
                 ),
                 focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFFD4AF37)),
+                  borderSide: BorderSide(color: Color(0xFF00695C)),
                 ),
               ),
             ),
@@ -71,7 +71,7 @@ void _connexion() {
                   borderSide: BorderSide(color: Colors.white38),
                 ),
                 focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFFD4AF37)),
+                  borderSide: BorderSide(color: Color(0xFF00695C)),
                 ),
               ),
             ),
@@ -84,7 +84,7 @@ void _connexion() {
               child: ElevatedButton(
                 onPressed: _connexion,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFD4AF37),
+                  backgroundColor: const Color(0xFF00695C),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5),
                   ),

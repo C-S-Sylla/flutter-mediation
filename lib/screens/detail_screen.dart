@@ -35,7 +35,7 @@ class _DetailScreenState extends State<DetailScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // --- EN-TÊTE VISUEL ---
+            //  EN-TÊTE VISUEL 
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 30),
@@ -80,7 +80,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   
                   const SizedBox(height: 30),
                   
-                  // --- BOUTON DE MODIFICATION DE STATUT ---
+                  //  BOUTON DE MODIFICATION DE STATUT 
                   SizedBox(
                     width: double.infinity,
                     height: 55,
